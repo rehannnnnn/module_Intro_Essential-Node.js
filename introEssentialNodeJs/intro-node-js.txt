@@ -1,0 +1,15 @@
+1. Mohon jelaskan apa itu Node.js? Apa perbedannya dengan JavaScript?
+	Node.js adalah runtime environment untuk JavaScript yang bersifat open-source dan cross-platform. Dengan Node.js kita dapat menjalankan kode JavaScript di mana pun, tidak hanya terbatas pada lingkungan browser.
+	Sedangkan JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. 
+2. Mohon jelaskan arsitektur dari Node.js?
+	V8 dan LIBUV adalah dua dependensi yang sangat penting yang menangani sebagian besar operasi node.js.
+	Node.js dibangun di atas mesin V8 Google. Ini adalah mesin javascript tercepat. Mesin V8 mengubah kode javascript menjadi kode mesin yang benar-benar dipahami oleh komputer. Hasilnya kemudian dibuat dan dikembalikan ke node.js. Node.js tidak dapat memahami kode javascript yang kita tulis tanpa V8. Selain javascript, V8 juga menggunakan C ++.
+	LIBUV adalah ketergantungan utama lainnya pada node.js. Ini memberi node.js akses ke sistem operasi mesin, jaringan, sistem file, dan banyak lagi. LIBUV adalah pustaka sumber terbuka dengan fokus kuat pada asynchronous I / O (Input-output). LIBUV ditulis dalam C ++. Selain fokus pada asynchronous I / O LIBUV juga mengimplementasikan dua fitur penting yaitu event loop dan thread pool.
+3. Apa perbedaan antara Built-in Module, External Module, dan Custom Module pada Node.js?
+	- build-in module adalah Modul yang tidak perlu di install dengan NPM, karena suda disediakan sejak kita install Nodejs. Modul-modul ini tidak perlu kita install dengan NPM, karena suda disediakan sejak kita install Nodejs.
+	- External Module adalah modul yang sebelum penggunaannya kita harus menginstalnnya secara manual
+	- Custom Module adalah Saat modul yang kita butuhkan tidak ada di dalam build-in dan NPM, maka kita harus buat sendiri.
+4. Sebutkan salah satu contoh dari Built-in Module, External Module, dan Custom Module pada Node.js?
+	Built in Module : http, url
+	External Module : nodemon 
+	Custom Module : kita bisa membuat (mendifinisikan) suatu module di file tertentu dan bisa secara langsung mengimport file tersebut untuk dijadikan module pada projek kita
